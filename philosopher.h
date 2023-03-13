@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   philosopher.h                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: frgojard <frgojard@student.42.fr>          +#+  +:+       +#+        */
+/*   By: franck <franck@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/12 22:32:05 by nbled             #+#    #+#             */
-/*   Updated: 2023/02/20 13:58:18 by frgojard         ###   ########.fr       */
+/*   Created: 2023/03/13 19:43:25 by franck            #+#    #+#             */
+/*   Updated: 2023/03/13 19:43:26 by franck           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #ifndef PHILOSOPHER_H
 # define PHILOSOPHER_H
@@ -54,9 +55,7 @@ typedef struct s_philo
 }			t_philo;
 
 int		philo_parsing(t_big_brother *big_brother, int argc, char **argv);
-void	*philo_init(t_big_brother *big_brother, int i);
 void	*philo_th(t_philo *philo);
-void	ft_print(t_philo *philo, char *str);
 time_t	get_time(void);
 void	ft_usleep(int time);
 void	big_brother_clear(t_big_brother *big_brother);

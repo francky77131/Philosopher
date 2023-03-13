@@ -3,18 +3,19 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: frgojard <frgojard@student.42.fr>          +#+  +:+       +#+         #
+#    By: franck <franck@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/12/12 22:36:13 by nbled             #+#    #+#              #
-#    Updated: 2023/02/20 13:57:46 by frgojard         ###   ########.fr        #
+#    Created: 2023/03/13 19:43:50 by franck            #+#    #+#              #
+#    Updated: 2023/03/13 19:43:52 by franck           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = philo
+
+
+NAME = philosopher
 
 SRCS =	main.c \
 		philo_parsing.c \
-		philo_init.c \
 		philo_th.c \
 		philo_utils.c \
 		philo_free.c
@@ -22,7 +23,8 @@ SRCS =	main.c \
 OBJS = $(SRCS:.c=.o)
 
 CC = cc
-CFLAGS = -Wall -Wextra -Werror -pthread
+CFLAGS = -g3 -Wall -Wextra -Werror -pthread
+
 
 all: ${NAME}
 
